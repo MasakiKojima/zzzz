@@ -1,0 +1,74 @@
+// Color
+$white: #fff;
+$black: #000;
+$red: #d9534f;
+$yellow: #ffd500;
+$orange: #f0ad4e;
+$green: #5cb85c;
+$blue: #0275d8;
+$pink: #ff5b77;
+$purple: #613d7c;
+$gray-dark: #292b2c;
+$gray: #464a4c;
+$gray-light: #636c72;
+$gray-lighter: #eceeef;
+$gray-lightest: #f7f7f9;
+
+// Font
+$font-size-mobile: 1.6rem;
+$font-size-tablet: 1.6rem;
+$font-size-desktop: 1.8rem;
+$line-height: 1.6;
+
+// Typography
+$font-jp: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', 'Segoe UI', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+// $font-jp: -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', 'Segoe UI', '游ゴシック', 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+// $font-jp: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+$font-en: 'brandon-grotesque', -apple-system, 'BlinkMacSystemFont', 'Helvetica Neue', 'Segoe UI', sans-serif;
+
+// z-index
+$zi-highest: 99999;
+$zi-high: 9999;
+$zi-medium: 999;
+$zi-low: 99;
+$zi-lowest: 9;
+$zi-ground: 0;
+$zi-below-ground: -1;
+
+// Gap
+$gap: 30px;
+
+// Max container width
+$container-mobile: 100%;
+$container-tablet: 100%;
+$container-desktop: 960px + $gap;
+$container-wide: 1152px + $gap;
+$container-fullhd: 1344px + $gap;
+
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: $container-desktop;
+$breakpoint-wide: $container-wide;
+$breakpoint-fullhd: $container-fullhd;
+
+// Media Queries
+$mobile-xs: 'screen and (max-width:' + 320px + ')';
+$mobile: 'screen and (max-width:' + ($breakpoint-tablet - 1) + ')';
+$tablet: 'screen and (min-width:' + $breakpoint-tablet + ')';
+$tablet-only: 'screen and (min-width:' + $breakpoint-tablet + ') and (max-width:' + ($breakpoint-desktop - 1) + ')';
+$touch: 'screen and (max-width:' + ($breakpoint-desktop - 1) + ')';
+$desktop: 'screen and (min-width:' + $breakpoint-desktop + '), print';
+$desktop-only: 'screen and (min-width:' + $breakpoint-desktop + ') and (max-width:' + ($breakpoint-wide - 1) + ')';
+$wide: 'screen and (min-width:' + $breakpoint-wide + ')';
+$wide-only: 'screen and (min-width:' + $breakpoint-wide + ') and (max-width:' + ($breakpoint-fullhd - 1) + ')';
+$fullhd: 'screen and (min-width:' + $breakpoint-fullhd + ')';
+$print: 'print';
+
+// Components
+$parts-breadcrumb: true; // パンくず
+$parts-button: true; // ボタン
+$parts-card: true; // カード
+$parts-form: true; // フォームアイテム
+$parts-news: true; // ニュース
+$parts-pagetop: true; // ページトップ
+$parts-pagination: true; // ページネーション

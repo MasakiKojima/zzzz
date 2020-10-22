@@ -1,0 +1,30 @@
+<?php include_once __DIR__ . '/assets/modules/functions.php'; ?>
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+  <head>
+    <title>@TITLE</title>
+    <meta name="description" content="@DESCRIPTION" />
+    <meta property="og:site_name" content="@TITLE" />
+    <meta property="og:title" content="@TITLE" />
+    <meta property="og:description" content="@DESCRIPTION" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="@URL" />
+    <meta property="og:image" content="@OGP_URL" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <?php include_once __DIR__ . '/assets/modules/meta.html'; ?>
+    <?php include_once __DIR__ . '/assets/modules/analytics.html'; ?>
+  </head>
+  <body class="pg-TopPage">
+    <?php include_once __DIR__ . '/assets/modules/header.html'; ?>
+    <main class="st-Main">
+      <div class="st-PageHeader">
+        st-PageHeader
+      </div>
+      <div class="st-PageBody">
+        st-PageBody
+      </div>
+    </main>
+    <?php include_once __DIR__ . '/assets/modules/footer.html'; ?>
+    <?php include_once __DIR__ . '/assets/modules/script.html'; ?>
+  </body>
+</html>

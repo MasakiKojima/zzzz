@@ -1,0 +1,284 @@
+{
+  "project_logo": null,
+  "project_favicon": "/favicon.png",
+  "project_name": "web-starter-kit",
+  "project_url": null,
+  "copyright_start_year": null,
+  "client_name": null,
+  "client_url": null,
+  "creators": [
+    {
+      "name": "Masaki Kojima",
+      "url": "#"
+    }
+  ],
+  "theme": {
+    "code_highlight_theme": "github-gist",
+    "show_project_name": true,
+    "show_version": true,
+    "max_width": 1200,
+    "titles": {
+      "library_title": "Pattern Library",
+      "pages_title": "Overview",
+      "components_title": "Components"
+    }
+  },
+  "assets": {
+    "css": ["/assets/css/style.css"],
+    "js": ["/assets/js/icons.js", "/assets/js/bundle.js"]
+  },
+  "font_libraries": {
+    "typekit_code": "bff4poc",
+    "typography_web_fonts": null,
+    "google_web_fonts": null
+  },
+  "content": null,
+  "groups": [
+    {
+      "name": "Colors",
+      "title": "Colors",
+      "components": [
+        {
+          "group": "Colors",
+          "name": "BrandColors",
+          "title": "Brand Colors",
+          "type": "colors",
+          "colors": [
+            {
+              "SCSS": "$red",
+              "COLOR": "d9534f"
+            },
+            {
+              "SCSS": "$orange",
+              "COLOR": "f0ad4e"
+            },
+            {
+              "SCSS": "$yellow",
+              "COLOR": "ffd500"
+            },
+            {
+              "SCSS": "$green",
+              "COLOR": "5cb85c"
+            },
+            {
+              "SCSS": "$blue",
+              "COLOR": "0275d8"
+            },
+            {
+              "SCSS": "$teal",
+              "COLOR": "5bc0de"
+            },
+            {
+              "SCSS": "$pink",
+              "COLOR": "ff5b77"
+            },
+            {
+              "SCSS": "$purple",
+              "COLOR": "613d7c"
+            }
+          ]
+        },
+        {
+          "group": "Colors",
+          "name": "GrayColors",
+          "title": "Gray Colors",
+          "type": "colors",
+          "colors": [
+            {
+              "SCSS": "$black",
+              "COLOR": "000"
+            },
+            {
+              "SCSS": "$gray-dark",
+              "COLOR": "292b2c"
+            },
+            {
+              "SCSS": "$gray",
+              "COLOR": "464a4c"
+            },
+            {
+              "SCSS": "$gray-light",
+              "COLOR": "636c72"
+            },
+            {
+              "SCSS": "$gray-lighter",
+              "COLOR": "eceeef"
+            },
+            {
+              "SCSS": "$gray-lightest",
+              "COLOR": "f7f7f9"
+            },
+            {
+              "SCSS": "$white",
+              "COLOR": "fff"
+            }
+          ]
+        },
+        {
+          "group": "Colors",
+          "name": "TextColors",
+          "title": "Text Colors",
+          "type": "colors",
+          "colors": [
+            {
+              "SCSS": "$gray-dark",
+              "COLOR": "292b2c"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Icons",
+      "title": "Icons",
+      "components": [
+        {
+          "group": "Icons",
+          "name": "Light",
+          "title": "Light"
+        },
+        {
+          "group": "Icons",
+          "name": "Regular",
+          "title": "Regular"
+        },
+        {
+          "group": "Icons",
+          "name": "Solid",
+          "title": "Solid"
+        },
+        {
+          "group": "Icons",
+          "name": "Brand",
+          "title": "Brand"
+        }
+      ]
+    },
+    {
+      "name": "Buttons",
+      "title": "Buttons",
+      "components": [
+        {
+          "group": "Buttons",
+          "name": "Default",
+          "title": "Default"
+        },
+        {
+          "group": "Buttons",
+          "name": "Small",
+          "title": "Small"
+        },
+        {
+          "group": "Buttons",
+          "name": "Large",
+          "title": "Large"
+        },
+        {
+          "group": "Buttons",
+          "name": "Disabled",
+          "title": "Disabled"
+        },
+        {
+          "group": "Buttons",
+          "name": "Share",
+          "title": "Share Button"
+        },
+        {
+          "group": "Buttons",
+          "name": "FormConfirm",
+          "title": "Form Confirm"
+        },
+        {
+          "group": "Buttons",
+          "name": "FormSubmit",
+          "title": "Form Submit"
+        }
+      ]
+    },
+    {
+      "name": "Navigation",
+      "title": "Navigation",
+      "components": [
+        {
+          "group": "Navigation",
+          "name": "Breadcrumb",
+          "title": "Breadcrumb"
+        }
+      ]
+    },
+    {
+      "name": "Forms",
+      "title": "Forms",
+      "components": [
+        {
+          "group": "Forms",
+          "name": "Input",
+          "title": "Input"
+        },
+        {
+          "group": "Forms",
+          "name": "Textarea",
+          "title": "Textarea"
+        },
+        {
+          "group": "Forms",
+          "name": "Checkbox",
+          "title": "Checkbox"
+        },
+        {
+          "group": "Forms",
+          "name": "Radio",
+          "title": "Radio"
+        },
+        {
+          "group": "Forms",
+          "name": "Select",
+          "title": "Select"
+        },
+        {
+          "group": "Forms",
+          "name": "InputErrors",
+          "title": "Input Errors"
+        }
+      ]
+    },
+    {
+      "name": "Information",
+      "title": "Information",
+      "components": [
+        {
+          "group": "Information",
+          "name": "Card",
+          "title": "Card"
+        },
+        {
+          "group": "Information",
+          "name": "News",
+          "title": "News"
+        }
+      ]
+    },
+    {
+      "name": "Pagination",
+      "title": "Pagination",
+      "components": [
+        {
+          "group": "Pagination",
+          "name": "Basic",
+          "title": "Basic"
+        },
+        {
+          "group": "Pagination",
+          "name": "Separate",
+          "title": "Separate"
+        },
+        {
+          "group": "Pagination",
+          "name": "Index",
+          "title": "Index"
+        }
+      ]
+    }
+  ],
+  "version": "1.9.5"
+}

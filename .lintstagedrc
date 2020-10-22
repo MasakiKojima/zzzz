@@ -1,0 +1,22 @@
+{
+  "src/scss/**/*.scss": [
+    "prettier --write",
+    "git add --"
+  ],
+  "src/js/**/*.js": [
+    "standard --fix",
+    "git add --"
+  ],
+  "*.{jpg,jpeg,JPG,JPEG}": [
+    "jpegoptim --strip-all -m85 --",
+    "git add --"
+  ],
+  "*.{png,PNG}": [
+    "pngquant --ext .png --speed 1 --force --",
+    "git add --"
+  ],
+  "*.svg": [
+    "svgo --config .svgorc",
+    "git add --"
+  ]
+}

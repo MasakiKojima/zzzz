@@ -1,0 +1,51 @@
+@if $parts-card == true {
+  .sw-Card {
+    @include grid();
+
+    &_Item {
+      @include column-tablet(4);
+
+      display: flex;
+      flex-direction: column;
+
+      &:not(:last-child) {
+        @media #{$mobile} {
+          margin-bottom: 25px;
+        }
+      }
+    }
+
+    &_Pic {
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &_Title {
+      margin-bottom: 0;
+    }
+
+    &_Date {
+      font-size: 1.2rem;
+    }
+
+    &_Body {
+      margin-bottom: 15px;
+    }
+
+    &_Button {
+      border: 2px solid #000;
+      margin-top: auto;
+      background-color: #000;
+      color: #fff;
+
+      &:hover {
+        background-color: #fff;
+        color: #000;
+      }
+    }
+  }
+}

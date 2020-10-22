@@ -1,0 +1,20 @@
+@if $parts-breadcrumb == true {
+  .st-Breadcrumb {
+    display: flex;
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+
+    &_Item {
+      & + & {
+        padding-left: 25px;
+        background: url('data:image/svg+xml;charset=utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%229%22%20height%3D%2228%22%20viewBox%3D%220%200%209%2028%22%3E%3Cpath%20d%3D%22M9.297%2015c0%20.125-.063.266-.156.36l-7.28%207.28c-.094.094-.234.156-.36.156s-.265-.063-.358-.156l-.78-.78c-.095-.095-.157-.22-.157-.36%200-.125.063-.266.156-.36L6.503%2015%20.362%208.86C.266%208.764.204%208.624.204%208.5s.063-.266.156-.36l.782-.78c.094-.094.234-.156.36-.156s.265.063.358.156l7.28%207.28c.095.095.157.235.157.36z%22%2F%3E%3C%2Fsvg%3E') left 10px center no-repeat;
+        background-size: 5px 15px;
+      }
+
+      &:last-child {
+        @include truncate;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@mixin grid($g: $gap) {
+  @if $g != 0 {
+    margin-right: calc(#{$g} / -2);
+    margin-left: calc(#{$g} / -2);
+
+    > * {
+      padding-right: calc(#{$g} / 2);
+      padding-left: calc(#{$g} / 2);
+    }
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+}

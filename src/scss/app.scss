@@ -1,0 +1,33 @@
+// Variables
+@import 'base/variables';
+
+// WebFont
+// @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap');
+
+// Normalize
+@import '~normalize.css';
+
+//node_modules
+// @import '~swiper/components/core/core';
+
+// Mixin
+@import 'base/mixin/*';
+
+// Grid
+@import 'base/grid/*';
+
+// Base
+@import 'base/body';
+@import 'base/fonts';
+@import 'base/links';
+@import 'base/utility';
+@import 'base/print';
+
+// Structure
+@import 'Structure/**/*';
+
+// SiteWide
+@import 'SiteWide/**/*';
+
+// Pages
+@import 'namespace/**/*';

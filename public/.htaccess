@@ -1,0 +1,9 @@
+# .html拡張子でPHPを実行
+AddHandler application/x-httpd-php .php .html
+
+# SSIを実行
+# Options +Includes
+# AddHandler server-parsed .html
+
+# Shift_JIS文字化け対策
+# AddType "text/html; charset=Shift_JIS" .html

@@ -1,0 +1,131 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  background-repeat: no-repeat;
+}
+
+a[href^='tel:'] {
+  @media #{$desktop} {
+    pointer-events: none;
+  }
+}
+
+.input,
+textarea,
+select {
+  appearance: none;
+}
+
+input,
+textarea,
+select {
+  @media #{$mobile} {
+    font-size: 16px;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type='number'] {
+  appearance: textfield;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+nav ol,
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+a svg,
+button svg,
+label svg {
+  pointer-events: none;
+}
+
+dl {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+dd {
+  margin-left: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  line-height: 1.4;
+}
+
+p {
+  margin-top: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: bottom;
+}
+
+figure {
+  margin: 0;
+}
+
+.is-disabled,
+button:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+::selection {
+  background-color: #333;
+  color: #fff;
+  text-shadow: none;
+}
+
+.mobile-hidden {
+  @media #{$mobile} {
+    display: none;
+  }
+}
+
+.desktop-hidden {
+  @media #{$desktop} {
+    display: none;
+  }
+}

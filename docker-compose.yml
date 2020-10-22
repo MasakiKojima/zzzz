@@ -1,0 +1,32 @@
+version: '2'
+services:
+  # httpd-php7.2
+  httpd:
+    container_name: 'httpd'
+    build: ./docker/httpd
+    ports:
+      - '80:80'
+      - '9001:9000'
+    expose:
+      - '80'
+      - '9001'
+    volumes:
+      - ./:/var/www/app:cached
+    links:
+      - mysql
+  # DB
+  mysql:
+    container_name: 'mysql'
+    build: ./docker/mysql
+    ports:
+      - '3307:3306'
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: app
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - '8025:8025'
+      - '1025:1025'

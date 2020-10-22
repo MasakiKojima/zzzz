@@ -1,0 +1,106 @@
+@if $parts-pagination == true {
+  .sw-Pgnt {
+    display: flex;
+    justify-content: space-between;
+
+    &_Prev,
+    &_Next,
+    &_Index,
+    &_Num a {
+      display: flex;
+      height: 40px;
+      align-items: center;
+      justify-content: center;
+      padding-right: 15px;
+      padding-left: 15px;
+      font-size: 1.3rem;
+      font-weight: bold;
+      line-height: 1;
+      transition: all 0.15s;
+    }
+
+    &_Prev,
+    &_Next,
+    &_Index {
+      border: 1px solid #333;
+      background-color: #333;
+      border-radius: 2px;
+      color: #fff;
+      letter-spacing: 0.1em;
+
+      &[href]:hover {
+        background: #fff;
+        color: #333;
+      }
+    }
+
+    &_Prev {
+      order: 1;
+
+      svg {
+        margin-right: 10px;
+      }
+    }
+
+    &_Next {
+      order: 3;
+
+      svg {
+        margin-left: 10px;
+      }
+    }
+
+    &_Pages {
+      display: flex;
+      order: 2;
+    }
+
+    &_Index {
+      order: 2;
+
+      svg {
+        margin-right: 5px;
+      }
+    }
+
+    &_Num {
+      margin: 0 5px;
+      color: $gray-dark;
+
+      a[href]:hover {
+        color: $gray-light;
+      }
+
+      &:not(&.is-current) {
+        @media #{$mobile} {
+          display: none;
+        }
+      }
+
+      &.is-current {
+        border-bottom: 3px solid #333;
+        cursor: default;
+      }
+    }
+
+    &_Separate {
+      display: flex;
+      align-items: center;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin: 0;
+
+      &::after {
+        width: 10px;
+        height: 100%;
+        background: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20512%22%3E%3Cpath%20d%3D%22M192%20256c0%2017.7-14.3%2032-32%2032s-32-14.3-32-32%2014.3-32%2032-32%2032%2014.3%2032%2032zm88-32c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032%2032-14.3%2032-32-14.3-32-32-32zm-240%200c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032%2032-14.3%2032-32-14.3-32-32-32z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E') center no-repeat;
+        background-size: 10px auto;
+        content: '';
+      }
+
+      @media #{$mobile} {
+        display: none;
+      }
+    }
+  }
+}

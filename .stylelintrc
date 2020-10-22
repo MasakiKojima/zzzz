@@ -1,0 +1,129 @@
+{
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-idiomatic-order",
+    "./node_modules/prettier-stylelint/config.js"
+  ],
+  "ignoreFiles": [
+    "**/*.html",
+    "**/*.css",
+    "**/*.svg",
+    "laravel/**"
+  ],
+  "rules": {
+    "at-rule-no-unknown": null,
+    "scss/at-rule-no-unknown": true,
+    "no-descending-specificity": null,
+    "function-url-quotes": "always",
+    "max-empty-lines": 1,
+    "block-opening-brace-space-before": "always",
+    "block-opening-brace-newline-after": "always",
+    "block-closing-brace-newline-before": "always",
+    "declaration-block-semicolon-newline-after": "always",
+    "order/order": [
+      "at-rules",
+      {
+        "type": "at-rule",
+        "name": "charset"
+      },
+      {
+        "type": "at-rule",
+        "name": "if"
+      },
+      {
+        "type": "at-rule",
+        "name": "else if"
+      },
+      {
+        "type": "at-rule",
+        "name": "else"
+      },
+      {
+        "type": "at-rule",
+        "name": "import"
+      },
+      {
+        "type": "at-rule",
+        "name": "include"
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "column-mobile"
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "column-tablet"
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "column-desktop"
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "column-wide"
+      },
+      {
+        "type": "at-rule",
+        "name": "include",
+        "parameter": "column-fullhd"
+      },
+      {
+        "type": "at-rule",
+        "name": "extend"
+      },
+      {
+        "type": "at-rule",
+        "name": "keyframes",
+        "hasBlock": true
+      },
+      "custom-properties",
+      "declarations",
+      {
+        "type": "at-rule",
+        "name": "media"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "mobile-xs"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "mobile"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "tablet"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "desktop"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "wide"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "fullhd"
+      },
+      {
+        "type": "at-rule",
+        "name": "media",
+        "parameter": "print"
+      }
+    ]
+  }
+}

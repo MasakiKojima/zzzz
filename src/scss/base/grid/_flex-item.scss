@@ -1,0 +1,5 @@
+@mixin flex-item($col, $gap) {
+  $gap: $gap * ($col - 1);
+
+  width: calc((100% - #{$gap}) / #{$col});
+}

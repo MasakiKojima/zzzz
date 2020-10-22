@@ -1,0 +1,22 @@
+/*
+Usage:
+@include aspect-ratio(16, 9);
+*/
+
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+
+  & > * {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  &::before {
+    display: block;
+    padding-top: calc((#{$height} / #{$width}) * 100%);
+    content: '';
+  }
+}

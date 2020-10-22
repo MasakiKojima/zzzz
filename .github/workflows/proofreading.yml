@@ -1,0 +1,33 @@
+name: FTP Deploy
+
+on: 
+  push:
+    branches: [ proofreading ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Use Node.js 12.x
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    
+    - name: Build Project
+      run: |
+        npm install
+        npm run build
+        
+    - name: List output files
+      run: ls -a
+
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        ftp-server: ${{ secrets.FTP_HOST }}
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        git-ftp-args: --remote-root ${{ secrets.FTP_REMOTE_ROOT }}
+        local-dir: template

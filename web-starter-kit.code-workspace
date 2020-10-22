@@ -1,0 +1,56 @@
+{
+  "folders": [
+    {
+      "path": "./public"
+    },
+    {
+      "path": "./src"
+    },
+    {
+      "path": "./public/assets/modules"
+    },
+    {
+      "path": "./"
+    }
+  ],
+  "settings": {
+    "editor.tabSize": 2, // インデントサイズの設定
+    "files.trimTrailingWhitespace": true, // 行末のスペースを削除
+    "files.insertFinalNewline": true, // ファイルの保存時に最新の行を末尾に挿入
+    "editor.formatOnSave": true, // 保存時に自動でフォーマット
+    "editor.formatOnSaveMode": "file", // 変更部分のみ自動でフォーマット
+    "editor.formatOnType": true,
+    "html.format.wrapLineLength": 0, // 要素の前に改行を入れない
+    "html.format.preserveNewLines": false, // 要素の前にある空行を削除
+    "html.format.unformatted": null, // htmlでフォーマットしないタグ
+    "html.format.endWithNewline": true, // htmlの末尾に改行を挿入
+    "editor.codeActionsOnSave": {
+      "source.fixAll.stylelint": true
+    },
+    "html.format.extraLiners": "",
+    "html.format.indentInnerHtml": true,
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[php]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vetur.format.defaultFormatter.html": "prettyhtml",
+    "vetur.format.defaultFormatterOptions": {
+      "prettyhtml": {
+        "printWidth": 9999,
+        "singleQuote": false
+      }
+    },
+    "javascript.validate.enable": false,
+    "prettier.disableLanguages": ["javascript"],
+    "standard.autoFixOnSave": true,
+    "eslint.enable": false
+  }
+}

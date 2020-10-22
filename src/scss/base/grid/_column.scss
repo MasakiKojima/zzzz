@@ -1,0 +1,33 @@
+@mixin column-mobile($col: 12) {
+  @media #{$mobile} {
+    @include make-column($col);
+  }
+}
+
+@mixin column-tablet($col: 12) {
+  @media #{$tablet} {
+    @include make-column($col);
+  }
+}
+
+@mixin column-desktop($col: 12) {
+  @media #{$desktop} {
+    @include make-column($col);
+  }
+}
+
+@mixin column-wide($col: 12) {
+  @media #{$wide} {
+    @include make-column($col);
+  }
+}
+
+@mixin column-fullhd($col: 12) {
+  @media #{$fullhd} {
+    @include make-column($col);
+  }
+}
+
+@mixin make-column($col: 12) {
+  width: calc((#{$col} / 12) * 100%);
+}

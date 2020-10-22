@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    {
+      "removeTitle": true
+    },
+    {
+      "removeAttrs": {
+        "attrs": [
+          "id",
+          "data-name"
+        ]
+      }
+    }
+  ]
+}
